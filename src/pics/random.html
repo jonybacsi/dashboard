@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>IT kedélyállapotok</title>
+
+</head>
+
+
+<body onload="runRNDM()">
+    <img src="random/0.jpg" alt="Véletlen képek a galériából" name="RNDM" />
+
+    <script>
+        var slidesmax = 15
+        var slidehely = 'random/'
+        function runRNDM() {
+            var slim = Math.round(Math.random() * (slidesmax - 1));
+            document.images.RNDM.src = 'random/' + [slim] + ".jpg";
+        }
+    </script>
+
+
+</body>
+
+</html>
