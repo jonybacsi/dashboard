@@ -5,6 +5,11 @@
     <title>IT kedélyállapotok</title>
 
     <style>
+        .full {
+            text-align: center;
+            margin: 20px;
+        }
+
         .button {
             width: 266px;
             color: #236b93;
@@ -29,11 +34,13 @@
 </head>
 
 <body onload="runRNDM()">
-    <img src="random/0.jpg" alt="Véletlen képek a galériából" name="RNDM" />
-    <br>
-    <button onclick="window.location.reload()" class="button">
-        Ú ez para, próbáljuk meg még egyszer
-    </button>
+    <div class="full">
+        <img src="random/0.jpg" alt="Véletlen képek a galériából" name="RNDM" />
+        <br>
+        <button onclick="window.location.reload()" class="button">
+            Ú ez para, próbáljuk meg még egyszer
+        </button>
+    </div>
 
     <script>
         var slidesmax = 15
