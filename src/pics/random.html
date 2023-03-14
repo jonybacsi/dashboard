@@ -4,11 +4,36 @@
 <head>
     <title>IT kedélyállapotok</title>
 
-</head>
+    <style>
+        .button {
+            width: 266px;
+            color: #236b93;
+            background-color: white;
+            border-color: #236b93;
+            border-radius: 4px;
+            border-width: 2px;
+            font-size: larger;
+            font-weight: bold;
+            padding: 10px;
+            cursor: pointer;
+            transition-duration: 0.4s;
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
 
+        .button:hover {
+            background-color: #236b93;
+            color: white;
+            box-shadow: 0 6px 8px 0 rgba(0, 0, 0, 0.24);
+        }
+    </style>
+</head>
 
 <body onload="runRNDM()">
     <img src="random/0.jpg" alt="Véletlen képek a galériából" name="RNDM" />
+    <br>
+    <button onclick="window.location.reload()" class="button">
+        Ú ez para, próbáljuk meg még egyszer
+    </button>
 
     <script>
         var slidesmax = 15
